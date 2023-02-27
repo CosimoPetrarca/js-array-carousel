@@ -1,5 +1,69 @@
+/*-----------
+    Reset 
+-----------*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    }
+
+/*-----------
+   Common 
+-----------*/
+
+body{
+    background-color: lightcoral;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliders{
+    width: 700px;
+    height: 300px;
+    background-color: lightcyan;
+    position: relative;
+}
+
+.up, .down{
+    position: absolute;
+    right: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+    cursor: pointer;
+    background-color: lightgray;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.up{
+    top: 20px;
+}
+
+.down{
+    bottom: 20px;
+}
+
+.item{
+    height: 100%;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
